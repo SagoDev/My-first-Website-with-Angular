@@ -1,0 +1,10 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+app-header, app-footer, app-login{
+    padding: 20px;
+}

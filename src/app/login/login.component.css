@@ -1,0 +1,79 @@
+.container,
+.form-field,
+.inputs-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field,
+.inputs-field {
+    text-align: center;
+    gap: 15px;
+}
+
+.button-field {
+    padding: 10px;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(199, 199, 211);
+    cursor: pointer;
+    color: black;
+    width: 150px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+
+.button-field button:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.inputs-field input {
+    border-radius: 12px;
+    background-color: rgb(199, 199, 211);
+    border: none;
+    outline: none;
+    width: 87%;
+    height: 45px;
+    padding: 0 0 0 45px;
+}
+
+.login-text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.check-forgPass-field {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #524e5d;
+    gap: 15px;
+}
+
+.forgot-pass-field {
+    color: #524e5d;
+}
+
+.main-text{
+    text-align: center;
+}
+.cat img{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}

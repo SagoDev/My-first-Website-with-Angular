@@ -1,0 +1,44 @@
+<div *ngIf='isLogged else login' class="container">
+    <div class="main-text">
+        <h1>Welcome {{username}}! You are logged now.</h1>
+    </div>
+    <div class="info-box">
+        <div class="cat">            
+            <div class="cat-img">
+                <img src="https://images.pexels.com/photos/14918399/pexels-photo-14918399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="logout-btn">
+        <button (click)="logout()">Logout</button>
+    </div>
+</div>
+<ng-template class="container" #login>
+    <div class="login-text">
+        <p>Enter your data</p>
+    </div>
+    <div class="form-field">
+        <form (ngSubmit)="submitForm()" #loginForm="ngForm">
+            <div class="inputs-field">
+                <input type="text" placeholder="Username" name="username"  [(ngModel)]="username" required>
+                <input type="password" placeholder="Password" name="password"  [(ngModel)]="password" required>
+            </div>
+            <div class="check-forgPass-field">
+                <div class="check-field">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+                <div class="forgot-pass-field">
+                    <label for=""><a href=""><small>Forgot password?</small></a></label>
+                </div>
+            </div>
+            <div class="button-field">
+                <button type="submit" [disabled]="!loginForm.valid">Sign In</button>
+            </div>
+            <div class="dont-account-field">
+                <span class=""><small>Don't have an account? <a href="">Sign Up</a></small></span>
+            </div>
+        </form>
+    </div>
+</ng-template>

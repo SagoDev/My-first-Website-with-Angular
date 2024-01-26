@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+.info,
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media .bi {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.info a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(85, 85, 90);
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        bottom: 0;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .info a {
+        font-size: 10px;
+    }
+
+    .social-media .bi {
+        font-size: 15px;
+    }
+}
